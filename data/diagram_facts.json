@@ -1,0 +1,23 @@
+[
+  {
+    "fact_id": "F06",
+    "subject": "PLC-03",
+    "predicate": "direct_control_signal_connection",
+    "object": [
+      "PS-04A",
+      "IV-21"
+    ],
+    "source": "diagrams/system_diagram_hydraulic.pdf",
+    "location": "p1; purple lines denote control/signal connections to PLC-03",
+    "method": "human_visual_review"
+  },
+  {
+    "fact_id": "F23A",
+    "subject": "Q1",
+    "predicate": "incoming_voltage",
+    "object": "480V",
+    "source": "reference/component_register.xlsx",
+    "location": "Components row Q1",
+    "method": "deterministic_table"
+  }
+]

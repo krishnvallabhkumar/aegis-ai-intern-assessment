@@ -1,0 +1,324 @@
+[
+  {
+    "id": "F01",
+    "subject": "HPU",
+    "predicate": "startup_prerequisite",
+    "object": "hydraulic fluid level within normal sight-glass band",
+    "source": "manuals/operator_manual.pdf",
+    "location": "p1, \u00a74.3",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F02",
+    "subject": "IV-21",
+    "predicate": "startup_required_state",
+    "object": "OPEN",
+    "source": "manuals/operator_manual.pdf",
+    "location": "p1, \u00a74.3",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F03",
+    "subject": "emergency stop",
+    "predicate": "startup_required_state",
+    "object": "RESET",
+    "source": "manuals/operator_manual.pdf",
+    "location": "p1, \u00a74.3",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F04",
+    "subject": "maintenance access panel",
+    "predicate": "startup_required_state",
+    "object": "CLOSED / installed",
+    "source": "manuals/operator_manual.pdf",
+    "location": "p1 warning",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F05",
+    "subject": "HPU",
+    "predicate": "normal_discharge_pressure",
+    "object": 200,
+    "unit": "bar",
+    "applies_from": "software 3.2",
+    "source": "manuals/operator_manual.pdf",
+    "location": "p1-2, \u00a7\u00a74.3-5",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F06",
+    "subject": "PLC-03",
+    "predicate": "direct_control_signal_connection",
+    "object": [
+      "PS-04A",
+      "IV-21"
+    ],
+    "source": "diagrams/system_diagram_hydraulic.pdf",
+    "location": "p1, purple control/signal lines",
+    "trust": "diagram",
+    "method": "visual_review"
+  },
+  {
+    "id": "F07",
+    "subject": "HPU",
+    "predicate": "normal_discharge_pressure",
+    "object": 180,
+    "unit": "bar",
+    "applies_before": "software 3.2",
+    "source": "manuals/operator_manual.pdf",
+    "location": "p2, \u00a75",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F08",
+    "subject": "PS-04",
+    "predicate": "superseded_by",
+    "object": "PS-04A",
+    "effective": "software 3.2",
+    "source": "engineering_bulletins/ECN-1042.pdf",
+    "location": "p1, \u00a71",
+    "trust": "engineering_change"
+  },
+  {
+    "id": "F09",
+    "subject": "ECN-1042",
+    "predicate": "changes",
+    "object": [
+      "PS-04\u2192PS-04A",
+      "180\u2192200 bar"
+    ],
+    "effective": "software 3.2",
+    "source": "engineering_bulletins/ECN-1042.pdf",
+    "location": "p1, \u00a71",
+    "trust": "engineering_change"
+  },
+  {
+    "id": "F10",
+    "subject": "A17",
+    "predicate": "condition",
+    "object": "hydraulic pressure below 150 bar",
+    "source": "reference/alarm_reference.pdf",
+    "location": "p1",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F11",
+    "subject": "A17",
+    "predicate": "possible_causes",
+    "object": [
+      "IV-21 closed or partially closed",
+      "low hydraulic fluid",
+      "pressure sensor signal invalid"
+    ],
+    "source": "reference/alarm_reference.pdf",
+    "location": "p1",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F12",
+    "subject": "A17",
+    "predicate": "persistent_action",
+    "object": "Shutdown Procedure 4.7 if persistent >10 seconds",
+    "source": "manuals/maintenance_manual.pdf",
+    "location": "p1, \u00a74",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F13",
+    "subject": "Shutdown Procedure 4.7",
+    "predicate": "steps",
+    "object": [
+      "close IV-21",
+      "confirm pressure decay",
+      "POWER OFF",
+      "tag out per LOTO",
+      "proceed to \u00a76 troubleshooting"
+    ],
+    "source": "manuals/maintenance_manual.pdf",
+    "location": "p1, \u00a74",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F14",
+    "subject": "PLC-03",
+    "predicate": "reset_condition",
+    "object": "pressure below 50 bar",
+    "source": "manuals/maintenance_manual.pdf",
+    "location": "p1, \u00a73",
+    "trust": "official_manual"
+  },
+  {
+    "id": "F15",
+    "subject": "PS-04A",
+    "predicate": "configuration_threshold",
+    "object": 200,
+    "unit": "bar",
+    "source": "configuration/configuration_export.json",
+    "location": "sensors.sensor_ps04a_threshold_bar",
+    "trust": "machine_config",
+    "applies_from": "firmware 3.2"
+  },
+  {
+    "id": "F16",
+    "subject": "PS-04A",
+    "predicate": "low_alarm_threshold",
+    "object": 150,
+    "unit": "bar",
+    "source": "configuration/configuration_export.json",
+    "location": "sensors.sensor_ps04a_alarm_low_bar",
+    "trust": "machine_config"
+  },
+  {
+    "id": "F17",
+    "subject": "PS-04A",
+    "predicate": "high_alarm_threshold",
+    "object": 220,
+    "unit": "bar",
+    "source": "configuration/configuration_export.json",
+    "location": "sensors.sensor_ps04a_alarm_high_bar",
+    "trust": "machine_config"
+  },
+  {
+    "id": "F18",
+    "subject": "software 3.2",
+    "predicate": "release_date",
+    "object": "2025-09-30",
+    "source": "reference/revision_history.xlsx",
+    "location": "Revision History row 3.2",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F19",
+    "subject": "software 3.2",
+    "predicate": "changes",
+    "object": [
+      "PS-04 replaced by PS-04A",
+      "normal pressure 180\u2192200 bar"
+    ],
+    "source": "reference/revision_history.xlsx",
+    "location": "Revision History row 3.2",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F20",
+    "subject": "IV-21",
+    "predicate": "location",
+    "object": "Hydraulic Module",
+    "source": "reference/component_register.xlsx",
+    "location": "Components row IV-21",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F21",
+    "subject": "PS-40",
+    "predicate": "relationship_to_HPU",
+    "object": "unrelated to HPU discharge circuit",
+    "source": "reference/component_register.xlsx",
+    "location": "Components row PS-40",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F22",
+    "subject": "P.S.04-A",
+    "predicate": "alias_of",
+    "object": "PS-04A",
+    "source": "screenshots/screen_03_diagnostics.png",
+    "location": "Diagnostics screenshot; note says tag is physical-unit label",
+    "trust": "screenshot"
+  },
+  {
+    "id": "F23",
+    "subject": "training slide",
+    "predicate": "introduces",
+    "object": "Auxiliary Reservoir",
+    "source": "extra/training_slide_excerpt.pptx",
+    "location": "slide 2",
+    "trust": "training"
+  },
+  {
+    "id": "F24",
+    "subject": "Auxiliary Reservoir",
+    "predicate": "scope",
+    "object": "Line 4/5-specific configuration detail; not covered in standard Operator Manual",
+    "source": "extra/training_slide_excerpt.pptx",
+    "location": "slide 2",
+    "trust": "training"
+  },
+  {
+    "id": "F25",
+    "subject": "sensor_ps04a_threshold_bar",
+    "predicate": "maps_to",
+    "object": "normal HPU discharge pressure / setpoint",
+    "source": "configuration/configuration_export.json",
+    "location": "sensors.sensor_ps04a_threshold_bar",
+    "trust": "machine_config"
+  },
+  {
+    "id": "F26",
+    "subject": "scanned calibration record",
+    "predicate": "calibration_interval",
+    "object": "not specified",
+    "source": "scans/scanned_appendix_calibration.pdf",
+    "location": "p1",
+    "trust": "scanned_field_record"
+  },
+  {
+    "id": "F27",
+    "subject": "PS-04A",
+    "predicate": "maximum_continuous_operating_temperature",
+    "object": null,
+    "status": "unknown",
+    "source": "scans/scanned_appendix_calibration.pdf",
+    "location": "p1; no interval/temperature specified",
+    "trust": "scanned_field_record"
+  },
+  {
+    "id": "F28",
+    "subject": "ECN-1058",
+    "predicate": "approver",
+    "object": null,
+    "status": "unknown",
+    "source": "engineering_bulletins/ECN-1058.pdf",
+    "location": "p1; released but no approver named",
+    "trust": "engineering_change"
+  },
+  {
+    "id": "F29",
+    "subject": "IV-21",
+    "predicate": "MTBF",
+    "object": null,
+    "status": "unknown",
+    "source": "reference/component_register.xlsx",
+    "location": "Components row IV-21; no MTBF field/value",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F30",
+    "subject": "Aegis Series-7 HCS",
+    "predicate": "documented_incoming_voltage",
+    "object": "480V",
+    "source": "reference/component_register.xlsx",
+    "location": "Q1 Notes: 480V incoming disconnect",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F31",
+    "subject": "Aegis Series-7 HCS",
+    "predicate": "3_phase_400V_compatibility",
+    "object": null,
+    "status": "unknown",
+    "source": "reference/component_register.xlsx",
+    "location": "package documents 480V but no 400V compatibility statement",
+    "trust": "official_reference"
+  },
+  {
+    "id": "F32",
+    "subject": "legacy manual",
+    "predicate": "applicability",
+    "object": "software revisions 3.0 and 3.1 only; superseded for 3.2+",
+    "source": "manuals/legacy_manual_v1.html",
+    "location": "HTML header",
+    "trust": "superseded"
+  }
+]

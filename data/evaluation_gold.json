@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "question": "What must be true before starting the Hydraulic Power Unit?",
+    "gold_answer": "Before starting the HPU, verify hydraulic fluid is within the normal sight-glass band, IV-21 is OPEN, the emergency-stop circuit is RESET, and the maintenance access panel is installed/closed. Then POWER ON, press START, and verify the applicable pressure setpoint.",
+    "gold_fact_ids": [
+      "F01",
+      "F02",
+      "F03",
+      "F04"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What is the current normal operating pressure for the HPU, and under what conditions does that apply?",
+    "gold_answer": "For software revision 3.2 and later, normal HPU discharge pressure is 200 bar. Before revision 3.2 it was 180 bar with PS-04.",
+    "gold_fact_ids": [
+      "F05",
+      "F07"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What does alarm A17 indicate, and what are its possible causes?",
+    "gold_answer": "A17 is Hydraulic Pressure Low; possible causes are IV-21 closed/partially closed, low hydraulic fluid, or invalid pressure-sensor signal.",
+    "gold_fact_ids": [
+      "F10",
+      "F11"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Is PS-04 the same component as PS-04A?",
+    "gold_answer": "No. PS-04 and PS-04A are different sensor revisions; PS-04 is superseded by PS-04A effective software revision 3.2.",
+    "gold_fact_ids": [
+      "F08"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which document introduced the change from PS-04 to PS-04A?",
+    "gold_answer": "ECN-1042 introduced the PS-04 \u2192 PS-04A change.",
+    "gold_fact_ids": [
+      "F08",
+      "F09"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Which components connect directly to the HCS controller, according to the hydraulic schematic?",
+    "gold_answer": "PS-04A and IV-21 have the direct purple control/signal connections to PLC-03 shown in the hydraulic schematic.",
+    "gold_fact_ids": [
+      "F06"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What action is required if alarm A17 persists for more than 10 seconds?",
+    "gold_answer": "If A17 persists for more than 10 seconds, execute Shutdown Procedure 4.7: close IV-21, confirm pressure decay, POWER OFF, tag out per LOTO, then troubleshoot.",
+    "gold_fact_ids": [
+      "F12",
+      "F13"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Under what circumstances must the controller not be reset?",
+    "gold_answer": "Do not reset PLC-03 while hydraulic pressure is above 50 bar; reset is permitted only below 50 bar.",
+    "gold_fact_ids": [
+      "F14"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What was the operating pressure threshold before software revision 3.2, and what changed it?",
+    "gold_answer": "Before software revision 3.2 the normal pressure was 180 bar. ECN-1042 changed it to 200 bar alongside the PS-04 \u2192 PS-04A replacement.",
+    "gold_fact_ids": [
+      "F07",
+      "F09"
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Which alarm is associated with a pressure sensor reading below 150 bar?",
+    "gold_answer": "A17 (Hydraulic Pressure Low), for pressure below 150 bar.",
+    "gold_fact_ids": [
+      "F10",
+      "F16"
+    ]
+  },
+  {
+    "id": 11,
+    "question": "According to the component register, what is the location of the isolation valve IV-21?",
+    "gold_answer": "IV-21 is located in the Hydraulic Module.",
+    "gold_fact_ids": [
+      "F20"
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Does the training slide deck introduce any component or alarm not found in the manuals?",
+    "gold_answer": "Yes. The training excerpt introduces an Auxiliary Reservoir as a Line 4/5-specific configuration detail not covered in the standard Operator Manual; it does not introduce a new alarm.",
+    "gold_fact_ids": [
+      "F23",
+      "F24"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "What sensor ID appears on the diagnostics screenshot, and does it match a known component?",
+    "gold_answer": "The diagnostics screenshot shows P.S.04-A, which is a printed-label variant of known component PS-04A.",
+    "gold_fact_ids": [
+      "F22"
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Per the revision history, when did software revision 3.2 take effect, and what changed alongside it?",
+    "gold_answer": "Software revision 3.2 took effect on 2025-09-30; it replaced PS-04 with PS-04A and changed normal pressure from 180 to 200 bar.",
+    "gold_fact_ids": [
+      "F18",
+      "F19"
+    ]
+  },
+  {
+    "id": 15,
+    "question": "What does sensor_ps04a_threshold_bar in the configuration export correspond to in the operator manual's terminology?",
+    "gold_answer": "sensor_ps04a_threshold_bar = 200 maps to the 200-bar normal HPU discharge pressure/setpoint for software revision 3.2 and later.",
+    "gold_fact_ids": [
+      "F15",
+      "F25"
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Does the 200 bar threshold apply to all Aegis HCS units, or only some?",
+    "gold_answer": "The 200-bar threshold applies to software revision 3.2 and later, not to all revisions; earlier revisions use 180 bar.",
+    "gold_fact_ids": [
+      "F05",
+      "F07",
+      "F08"
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Is PS-04 the same as PS-40?",
+    "gold_answer": "No. PS-40 is a different pressure sensor in the coolant loop on Skid B and is unrelated to the HPU discharge circuit.",
+    "gold_fact_ids": [
+      "F21"
+    ]
+  },
+  {
+    "id": 18,
+    "question": "What was the pressure limit before revision 3.2?",
+    "gold_answer": "180 bar.",
+    "gold_fact_ids": [
+      "F07"
+    ]
+  },
+  {
+    "id": 19,
+    "question": "What is the maximum continuous operating temperature of PS-04A?",
+    "gold_answer": "Not determinable from the supplied package; no maximum continuous operating temperature for PS-04A is specified.",
+    "gold_fact_ids": [
+      "F27"
+    ]
+  },
+  {
+    "id": 20,
+    "question": "What is the calibration interval for the electrical system diagram's voltage sensor?",
+    "gold_answer": "Not determinable from the supplied package; no voltage-sensor calibration interval is specified.",
+    "gold_fact_ids": [
+      "F26"
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Who approved engineering bulletin ECN-1058?",
+    "gold_answer": "Not determinable from the supplied package; ECN-1058 is marked Released but names no approver.",
+    "gold_fact_ids": [
+      "F28"
+    ]
+  },
+  {
+    "id": 22,
+    "question": "What is the mean time between failures for the isolation valve IV-21?",
+    "gold_answer": "Not determinable from the supplied package; no MTBF for IV-21 is provided.",
+    "gold_fact_ids": [
+      "F29"
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Is the Aegis Series-7 HCS compatible with a 3-phase 400V supply?",
+    "gold_answer": "The package does not establish compatibility with 3-phase 400V. It documents a 480V incoming disconnect and gives no 400V compatibility statement.",
+    "gold_fact_ids": [
+      "F30",
+      "F31"
+    ]
+  }
+]

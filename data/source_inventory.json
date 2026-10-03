@@ -1,0 +1,122 @@
+[
+  {
+    "path": "manuals/operator_manual.pdf",
+    "title": "Operator Manual AEG-OM-700 Rev 4",
+    "trust": "official_manual",
+    "location": "p1-2"
+  },
+  {
+    "path": "manuals/maintenance_manual.pdf",
+    "title": "Maintenance Manual AEG-MM-700 Rev 3",
+    "trust": "official_manual",
+    "location": "p1"
+  },
+  {
+    "path": "manuals/legacy_manual_v1.html",
+    "title": "Legacy Operator Manual Rev 1",
+    "trust": "superseded",
+    "location": "HTML"
+  },
+  {
+    "path": "engineering_bulletins/ECN-1042.pdf",
+    "title": "ECN-1042",
+    "trust": "engineering_change",
+    "location": "p1"
+  },
+  {
+    "path": "engineering_bulletins/ECN-1058.pdf",
+    "title": "ECN-1058",
+    "trust": "engineering_change",
+    "location": "p1"
+  },
+  {
+    "path": "reference/alarm_reference.pdf",
+    "title": "Alarm Reference AEG-AL-700 Rev 5",
+    "trust": "official_reference",
+    "location": "p1-2"
+  },
+  {
+    "path": "reference/component_register.xlsx",
+    "title": "Component Register AEG-CR-700",
+    "trust": "official_reference",
+    "location": "Components"
+  },
+  {
+    "path": "reference/terminology_glossary.docx",
+    "title": "Terminology Glossary AEG-GL-700 Rev 2",
+    "trust": "official_reference",
+    "location": "Table"
+  },
+  {
+    "path": "reference/revision_history.xlsx",
+    "title": "Revision History",
+    "trust": "official_reference",
+    "location": "Revision History"
+  },
+  {
+    "path": "diagrams/system_diagram_hydraulic.pdf",
+    "title": "Hydraulic Schematic AEG-DWG-H01",
+    "trust": "diagram",
+    "location": "p1"
+  },
+  {
+    "path": "diagrams/system_diagram_electrical.png",
+    "title": "Electrical Schematic AEG-DWG-E02",
+    "trust": "diagram",
+    "location": "image"
+  },
+  {
+    "path": "diagrams/wiring_diagram.pdf",
+    "title": "Instrumentation Wiring Diagram AEG-DWG-W03",
+    "trust": "diagram",
+    "location": "p1"
+  },
+  {
+    "path": "screenshots/screen_01_home.png",
+    "title": "HMI Home Screen",
+    "trust": "screenshot",
+    "location": "image"
+  },
+  {
+    "path": "screenshots/screen_02_alarms.png",
+    "title": "HMI Alarm List",
+    "trust": "screenshot",
+    "location": "image"
+  },
+  {
+    "path": "screenshots/screen_03_diagnostics.png",
+    "title": "HMI Diagnostics",
+    "trust": "screenshot",
+    "location": "image"
+  },
+  {
+    "path": "scans/scanned_appendix_calibration.pdf",
+    "title": "Scanned Calibration Appendix",
+    "trust": "scanned_field_record",
+    "location": "p1"
+  },
+  {
+    "path": "configuration/configuration_export.json",
+    "title": "Configuration Export",
+    "trust": "machine_config",
+    "location": "JSON"
+  },
+  {
+    "path": "low_trust/site_survey_notes.docx",
+    "title": "Site Survey Notes",
+    "trust": "low_trust",
+    "location": "DOCX"
+  },
+  {
+    "path": "noise/safety_data_sheet_hydraulic_fluid.pdf",
+    "title": "HydroFluid-32 SDS",
+    "trust": "irrelevant_noise",
+    "location": "p1-2"
+  },
+  {
+    "path": "extra/training_slide_excerpt.pptx",
+    "title": "Training Slide Excerpt",
+    "trust": "training",
+    "location": "slides 4-6"
+  }
+]
